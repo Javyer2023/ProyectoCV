@@ -1,0 +1,35 @@
+{
+	
+		"genero": "Mujer",
+		"nombre": "Daniela Perez",
+		"ubicacion": {
+			"calle": {
+				"numero": 9173,
+				"nombre": "Calle de Tetuán"
+			},
+			"ciudad": "Castellón de la Plana",
+			"Estado": "Islas Baleares",
+			"pais": "España",
+			"cp": 18372
+
+		},
+		"email": "daniela.perez@example.com",
+		"dianacimiento": {
+			"dia": "1955-12-07",
+			"edad": 67
+		},
+		"telefono": "935-865-304",
+		"celular": "664-306-050",
+		"id": {
+			"name": "DNI",
+			"value": "43200071-E"
+		},
+		"picture": {
+			"large": "https://randomuser.me/api/portraits/women/18.jpg",
+			"medium": "https://randomuser.me/api/portraits/med/women/18.jpg",
+			"thumbnail": "https://randomuser.me/api/portraits/thumb/women/18.jpg"
+		}
+
+	
+
+}
