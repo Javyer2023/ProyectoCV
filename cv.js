@@ -1,14 +1,31 @@
 fetch('datos.json')
     .then (response => response.json())
     .then (data => {
-        document.getElementById('edad').innerHTML = `Edad:  ${data.dianacimiento.edad}`
-        document.getElementById('diana').innerHTML = `Fecha de Nacimiento: ${data.dianacimiento.dia}`
-        document.getElementById('direccion').innerHTML = `Direccion: ${data.ubicacion.calle.nombre}  ${data.ubicacion.calle.numero}`
-        document.getElementById('Ciudad').innerHTML = `Ciudad: ${data.ubicacion.ciudad} , ${data.ubicacion.pais} `
-        document.getElementById('tel').innerHTML = `Celular: ${data.celular}`
-        document.getElementById('email').innerHTML= `Email: ${data.email}` 
+        document.getElementById('edad').innerHTML = `<b>Edad:</b>  ${data.dianacimiento.edad}`
+        document.getElementById('diana').innerHTML = `<b>Fecha de Nacimiento:</b> ${data.dianacimiento.dia}`
+        document.getElementById('direccion').innerHTML = `<b>Direccion:</b> ${data.ubicacion.calle.nombre}  ${data.ubicacion.calle.numero}`
+        document.getElementById('Ciudad').innerHTML = `<b>Ciudad:</b> ${data.ubicacion.ciudad} , ${data.ubicacion.pais} `
+        document.getElementById('tel').innerHTML = `<b>Celular:</b> ${data.celular}`
+        document.getElementById('email').innerHTML= `<b>Email:</b> ${data.email}` 
 
     })
 
-    
-/* No he podido terminar el proyecto como hubiera querido. Por distintos problemas personales retomé el curso hace una semana. El trabajo practico lo hice en mi tiempo libre entre el fin de semana y ahora estoy por subirlo. Les pido disculpas. Se que faltan muchas funcionalidades. **/
+
+  /*    
+   let  boton = document.getElementById("btn");
+   boton.onclick = function() {
+       var parrafo = document.getElementById("oculto");
+       parrafo.style.display = "block";
+   }
+   */
+
+  window.onload =  function() {
+    let boton = document.getElementById("btn");
+    boton.onclick = function() {
+      let parrafo = document.getElementById("oculto");
+      parrafo.style.display = "block";
+      boton.style.display = "none";
+
+    }
+}
+
